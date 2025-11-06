@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>516</width>
+    <height>496</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(212, 15, 7, 255), stop:1 rgba(0, 97, 97, 255));</string>
+  </property>
+  <widget class="QComboBox" name="comboBox_Employee">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>150</y>
+     <width>361</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>-1</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Cleaner</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Feeder</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Add_Employee_Dialoge">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>390</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color:white;
+background-color:rgba(255,255,255,30);
+border:1px solid rgba(255,255,255,40);
+border-radius: 7px;
+width:130px;
+height:40px;
+}
+QPushButton:hover{
+background-color: rgba(255,255,255,30);
+}
+QPushButton:pressed{
+background-color: rgba(255,255,255,70);
+}</string>
+   </property>
+   <property name="text">
+    <string>Add_Employee</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>233</y>
+     <width>461</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">color:white;
+front-weight:bold;
+front-size:20pt;
+backdround-color:none;
+border:none;</string>
+        </property>
+        <property name="text">
+         <string>Ім'я</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_First_Name"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">color:white;
+front-weight:bold;
+front-size:20pt;
+backdround-color:none;
+border:none;</string>
+        </property>
+        <property name="text">
+         <string>Фамілія</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_Last_Name"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">color:white;
+front-weight:bold;
+front-size:20pt;
+backdround-color:none;
+border:none;</string>
+        </property>
+        <property name="text">
+         <string>ДатаНародження</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="dateEdit_Edit_Employee"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Телефон/пошта</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_Phone_Email"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>0</y>
+     <width>181</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_icon_enployees">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="res-icon.qrc">:/icon/Icons/person_apron_40dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg</pixmap>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">color:white;
+front-weight:bold;
+front-size:20pt;
+backdround-color:none;
+border:none;</string>
+      </property>
+      <property name="text">
+       <string>New_Employee</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res-icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

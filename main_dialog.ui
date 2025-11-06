@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1079</width>
+    <height>585</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(212, 15, 7, 255), stop:1 rgba(0, 97, 97, 255))</string>
+   </property>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>10</y>
+      <width>134</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QPushButton" name="pushButton_Add_Employee">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color:white;
+background-color:rgba(255,255,255,30);
+border:1px solid rgba(255,255,255,40);
+border-radius: 7px;
+width:130px;
+height:40px;
+}
+QPushButton:hover{
+background-color: rgba(255,255,255,30);
+}
+QPushButton:pressed{
+background-color: rgba(255,255,255,70);
+}</string>
+       </property>
+       <property name="text">
+        <string>AddEmployee</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Delete_Employee">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color:white;
+background-color:rgba(255,255,255,30);
+border:1px solid rgba(255,255,255,40);
+border-radius: 7px;
+width:130px;
+height:40px;
+}
+QPushButton:hover{
+background-color: rgba(255,255,255,30);
+}
+QPushButton:pressed{
+background-color: rgba(255,255,255,70);
+}</string>
+       </property>
+       <property name="text">
+        <string>DeleteEmployee</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Add_Animal">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color:white;
+background-color:rgba(255,255,255,30);
+border:1px solid rgba(255,255,255,40);
+border-radius: 7px;
+width:130px;
+height:40px;
+}
+QPushButton:hover{
+background-color: rgba(255,255,255,30);
+}
+QPushButton:pressed{
+background-color: rgba(255,255,255,70);
+}</string>
+       </property>
+       <property name="text">
+        <string>Add_Animal</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Delete_Animal">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color:white;
+background-color:rgba(255,255,255,30);
+border:1px solid rgba(255,255,255,40);
+border-radius: 7px;
+width:130px;
+height:40px;
+}
+QPushButton:hover{
+background-color: rgba(255,255,255,30);
+}
+QPushButton:pressed{
+background-color: rgba(255,255,255,70);
+}</string>
+       </property>
+       <property name="text">
+        <string>DeleteAnimal</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Feed_Animal">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color:white;
+background-color:rgba(255,255,255,30);
+border:1px solid rgba(255,255,255,40);
+border-radius: 7px;
+width:130px;
+height:40px;
+}
+QPushButton:hover{
+background-color: rgba(255,255,255,30);
+}
+QPushButton:pressed{
+background-color: rgba(255,255,255,70);
+}</string>
+       </property>
+       <property name="text">
+        <string>FeedAnimal</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>10</y>
+      <width>471</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_Icon_Animals">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res-icon.qrc">:/icon/Icons/emoji_nature_40dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_All_Animals_2">
+         <property name="text">
+          <string>All_Animals</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_All_Animals">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_Icon_Animals_2">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res-icon.qrc">:/icon/Icons/raven_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Birds_2">
+         <property name="text">
+          <string>Birds</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Birds">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QLabel" name="label_Icon_Animals_3">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res-icon.qrc">:/icon/Icons/pets_40dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Rantors_2">
+         <property name="text">
+          <string>Raptors</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Rantors">
+         <property name="text">
+          <string>Raptors</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLabel" name="label_Icon_Animals_4">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res-icon.qrc">:/icon/Icons/cruelty_free_40dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Grazers_2">
+         <property name="text">
+          <string>Grazers</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Grazers">
+         <property name="text">
+          <string>Grazers</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>441</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_icon_enployees">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res-icon.qrc">:/icon/Icons/person_apron_40dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_All_employees_2">
+         <property name="text">
+          <string>All_Employees</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_All_employees">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_icon_enployees_2">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res-icon.qrc">:/icon/Icons/household_supplies_40dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Cleaners_2">
+         <property name="text">
+          <string>Cleaners</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Cleaners">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_icon_enployees_3">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res-icon.qrc">:/icon/Icons/restaurant_40dp_E8EAED_FILL0_wght400_GRAD0_opsz40.svg</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Feeders_2">
+         <property name="text">
+          <string>Feeders</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_Feeders">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>1061</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <widget class="QTableView" name="tableView_Employee">
+       <property name="styleSheet">
+        <string notr="true">QTableView:{
+background-color: rgba(255,255,255,30);
+border: 1px solid rgba(255,255,255,40);
+border-bottom-right-radios:7px;
+}
+QTableView:: section{
+background-color: rgba(53,53,53);
+color:white;
+border:none;
+height:50px;
+font-size:14pt;
+}
+QTableView::item{
+border-stele:none;
+border-bottom: rgba(255,255,255,50)
+}
+QTableView::item:selected{
+border-stele:none;
+color:rgba(255,255,255);
+background-color: rgba(255,255,255,50);
+}
+</string>
+       </property>
+       <property name="showGrid">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableView_Animal">
+       <property name="styleSheet">
+        <string notr="true">QTableView:{
+background-color: rgba(255,255,255,30);
+border: 1px solid rgba(255,255,255,40);
+border-bottom-left-radios:7px;
+}
+QTableView:: section{
+background-color: rgba(53,53,53);
+color:white;
+border:none;
+height:50px;
+font-size:14pt;
+}
+QTableView::item{
+border-stele:none;
+border-bottom: rgba(255,255,255,50)
+}
+QTableView::item:selected{
+border-stele:none;
+color:rgba(255,255,255);
+background-color: rgba(255,255,255,50);
+}
+</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res-icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
