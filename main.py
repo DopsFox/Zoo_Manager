@@ -16,7 +16,6 @@ class Zoo(QMainWindow):
         self.ui.setupUi(self)
         self.conn = Data()
 
-        # 🔹 Підключення до бази через QSqlDatabase
         self.db = QSqlDatabase.addDatabase("QPSQL")
 
         self.db.setHostName("localhost")
@@ -38,11 +37,9 @@ class Zoo(QMainWindow):
 
 
         self.update_stat()
-        # 🔹 Завантаження таблиць
         self.view_data_Employee()
         self.view_data_Animal()
 
-        # 🔹 Підключення кнопок
         self.ui.pushButton_Add_Animal.clicked.connect(self.open_new_animal)
         self.ui.pushButton_Delete_Animal.clicked.connect(self.delete_animal)
         self.ui.pushButton_Feed_Animal.clicked.connect(self.feed_animal)
@@ -71,12 +68,11 @@ class Zoo(QMainWindow):
         self.ui.label_Cleaners.setText(f"{cleaners_count}")
         self.ui.label_Feeders.setText(f"{feeders_count}")
     def open_new_employee(self):
-        """ Відкриває вікно для додавання співробітника """
         self.new_window = QtWidgets.QDialog()
         self.ui_window = Ui_EmployeeDialog()
         self.ui_window.setupUi(self.new_window)
         self.ui_window.pushButton_Add_Employee_Dialoge.clicked.connect(self.add_new_employee)
-        self.new_window.exec()  # Використовуємо exec(), щоб дочекатися закриття діалогу
+        self.new_window.exec()  
 
     def open_new_animal(self):
         self.new_window = QtWidgets.QDialog()
@@ -86,7 +82,6 @@ class Zoo(QMainWindow):
         self.new_window.exec()
 
     def add_new_employee(self):
-        """ Додає нового співробітника у базу """
         type_employee = self.ui_window.comboBox_Employee.currentText()
         first_name = self.ui_window.lineEdit_First_Name.text()
         last_name = self.ui_window.lineEdit_Last_Name.text()
@@ -104,7 +99,7 @@ class Zoo(QMainWindow):
 
     def add_new_animal(self):
         name = self.ui_window.lineEdit_Name_Animal.text()
-        animal_type = self.ui_window.comboBox.currentText()  # 🔹 Оновлено
+        animal_type = self.ui_window.comboBox.currentText() 
         birthday = self.ui_window.dateEdit_Animal.date().toString("yyyy-MM-dd")
         type_of_animal = self.ui_window.lineEdit_Type_Animal.text()
         feed = self.ui_window.comboBox_2.currentText()
@@ -119,7 +114,6 @@ class Zoo(QMainWindow):
         self.new_window.close()
 
     def view_data_Employee(self):
-        """ Завантаження даних у таблицю співробітників """
         self.model_employee = QSqlTableModel(self, self.db)
         self.model_employee.setTable("employee")
         self.model_employee.select()
@@ -133,7 +127,6 @@ class Zoo(QMainWindow):
         self.ui.tableView_Animal.setModel(self.model_animal)
 
     def delete_employee(self):
-        """ Видаляє вибраного співробітника """
         index = self.ui.tableView_Employee.selectionModel().currentIndex()
         if not index.isValid():
             QMessageBox.warning(self, "Видалення", "Виберіть співробітника для видалення!")
@@ -145,7 +138,6 @@ class Zoo(QMainWindow):
         self.view_data_Employee()
 
     def delete_animal(self):
-        """ Видаляє вибрану тварину """
         index = self.ui.tableView_Animal.selectionModel().currentIndex()
         if not index.isValid():
             QMessageBox.warning(self, "Видалення", "Виберіть тварину для видалення!")
@@ -157,7 +149,6 @@ class Zoo(QMainWindow):
         self.view_data_Animal()
 
     def feed_animal(self):
-        """ Годує вибрану тварину """
         index = self.ui.tableView_Animal.selectionModel().currentIndex()
         if not index.isValid():
             QMessageBox.warning(self, "Годування", "Виберіть тварину для годування!")
